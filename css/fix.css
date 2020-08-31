@@ -1,0 +1,56 @@
+#searchButton{
+    height: 47px;
+  }
+  .bootstrap-select>.dropdown-toggle.bs-placeholder{
+    background-color: #3292a6;
+    color:#fff;
+    height: 47px;
+  }
+  .bootstrap-select>.dropdown-toggle {
+    background-color: #3292a6;
+    color:#fff;
+    height: 47px;
+  }
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: #fff;
+    background-color:#26707f;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  overflow: hidden;
+  margin: 4px;
+}
+
+.carousel-item{
+    height: 530px;
+    min-height: 530px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+/*---Firefox bug fix---*/
+
+.carousel-item{
+    transition: -webkit-transform 0.5s ease; 
+    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease , -webkit-transform 0.5s ease; 
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.carousel-item {
+  height: 450px; }
+
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
+  background-size: cover; }
+
+.carousel-image-2 {
+  background: url("../img/image2.jpg");
+  background-size: cover; }
+
+.carousel-image-3 {
+  background: url("../img/image3.jpg");
+  background-size: cover; }

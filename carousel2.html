@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Carousel 1</title>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fix.css">
+        <style>
+      
+        </style>
+      </head>
+<body>
+  <header>
+    <div class="carousel slid" id="carouselExampleIndicators" data-ride="carousel" >
+      <ol class="carousel-indicators">
+        <!-- Carousel Indicators -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <!-- carousel-inner -->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('img/image1.jpg');">
+          <!--set text or caption here it will display block for mid screen any less of that it will not dipaly-->
+          <div class="carousel-caption d-none d-md-block">
+            <p calss='h3'>Slide Number 1</p>
+          </div>
+        </div>  
+        <div class="carousel-item" style="background-image: url('img/image2.jpg');">
+          <!--set text or caption here it will display block for mid screen any less of that it will not dipaly-->
+          <div class="carousel-caption d-none d-md-block">
+            <p calss='h3'>Slide Number 2</p>
+          </div>
+        </div>  
+        <div class="carousel-item" style="background-image: url('img/image3.jpg');">
+          <!--set text or caption here it will display block for mid screen any less of that it will not dipaly-->
+          <div class="carousel-caption d-none d-md-block">
+            <p calss='h3'>Slide Number 3</p>
+          </div>
+        </div>  
+      </div>
+      <!--End: carousel-inner -->
+      <!-- Carousel Control Next/Prev -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </header>
+        <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+</body>
+</html>

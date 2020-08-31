@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap 4 Starter Pack</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fix.css">
+  <style>
+.collapse-content .fa.fa-heart:hover {
+  color: #f44336 !important;
+}
+.collapse-content .fa.fa-share-alt:hover {
+  color: #0d47a1 !important;
+}
+  </style>
+</head>
+<body id="home">
+  <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top py-4"> -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/mlogo.png" width="50" height="50" alt=""><h3 class="d-inline align-middle">Mizuxe</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Category 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Category 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Category 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL/SLIDER -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur architecto eius magni nobis nulla eaque. Deserunt sunt, distinctio quos.</p>
+              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur architecto eius magni nobis nulla eaque. Deserunt sunt, distinctio quos.</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-1">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur architecto eius magni nobis nulla eaque. Deserunt sunt, distinctio quos.</p>
+              <a href="#" class="btn btn-success btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+  <!-- Search -->
+  <section id="search" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12">
+          <div class="input-group">
+            <select name="categroy" id="categroy" class="selectpicker col-sm-2" multiple>
+              <option value="Fashion">Fashion</option>
+              <option value="Tools">Tools</option>
+              <option value="Books">Books</option>
+              <div role="separator" class="dropdown-divider"></div>
+              <option value="Others">Others</option>
+            </select>
+
+            <!-- <select name="store" id="store" class="selectpicker col-sm-2" multiple>
+              <option value="amazone">Amazon</option>
+              <option value="eBay">E-Bay</option>
+              <option value="SheIn">She in</option>
+              <option value="ally baba">Ally Baba</option>
+            </select> -->
+          
+            <input id="searchTextbox" type="text" class="col-sm-7" placeholder="Product Name">
+            <!-- <div class="btn-group">
+              <button id='category' class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Fashion</a>
+                <a class="dropdown-item" href="#">Books</a>
+                <a class="dropdown-item" href="#">Tools</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Others</a>
+              </div>
+            </div> -->
+            
+            
+            <div class="btn-group">
+              <button id='category' class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Amazone</a>
+                <a class="dropdown-item" href="#">E bay</a>
+                <a class="dropdown-item" href="#">She In</a>
+                <a class="dropdown-item" href="#">Ally Baba</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Others</a>
+              </div>
+            </div>
+            <button id='searchButton' class="btn btn-primary btn-lg rounded-0"><i class="fa fa-search"></i> </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4" >
+<!-- Card -->
+          <div class="card promoting-card">
+
+            <!-- Card content -->
+            <div class="card-body d-flex flex-row mx-auto">
+              <!-- Content -->
+              <div>
+                <!-- Title -->
+                <h4 class="card-title font-weight-bold mb-2">New spicy meals</h4>
+                <!-- Subtitle -->
+                <span class="card-text"><i class="far fa-clock pr-2"></i>08/20/2020</span>
+                <span class="card-text"><i class="far fa-clock pr-2"></i>07/24/2020</span>
+              </div>
+            </div>
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top rounded-0" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body ">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.</p>
+              <div class="text-center"><a href="#" class="btn btn-danger  rounded-circle">Get</a></div>
+              
+            </div>
+
+          </div>
+<!-- Card -->
+        </div>
+        <div class="col-md-4 mb-4" >
+          <!-- Card -->
+                    <div class="card promoting-card">
+          
+                      <!-- Card content -->
+                      <div class="card-body d-flex flex-row mx-auto">
+                        <!-- Content -->
+                        <div>
+                          <!-- Title -->
+                          <h4 class="card-title font-weight-bold mb-2">New spicy meals</h4>
+                          <!-- Subtitle -->
+                          <span class="card-text"><i class="far fa-clock pr-2"></i>08/20/2020</span>
+                          <span class="card-text"><i class="far fa-clock pr-2"></i>07/24/2020</span>
+                        </div>
+                      </div>
+          
+                      <!-- Card image -->
+                      <div class="view overlay">
+                        <img class="card-img-top rounded-0" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask rgba-white-slight"></div>
+                        </a>
+                      </div>
+          
+                      <!-- Card content -->
+                      <div class="card-body ">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.</p>
+                        <div class="text-center"><a href="#" class="btn btn-danger w-100 ">Get</a></div>
+                        
+                      </div>
+          
+                    </div>
+          <!-- Card -->
+                  </div>
+                  <div class="col-md-4 mb-4" >
+                    <!-- Card -->
+                              <div class="card promoting-card">
+                    
+                                <!-- Card content -->
+                                <div class="card-body d-flex flex-row mx-auto">
+                                  <!-- Content -->
+                                  <div>
+                                    <!-- Title -->
+                                    <h4 class="card-title font-weight-bold mb-2">New spicy meals</h4>
+                                    <!-- Subtitle -->
+                                    <span class="card-text"><i class="far fa-clock pr-2"></i>08/20/2020</span>
+                                    <span class="card-text"><i class="far fa-clock pr-2"></i>07/24/2020</span>
+                                  </div>
+                                </div>
+                    
+                                <!-- Card image -->
+                                <div class="view overlay">
+                                  <img class="card-img-top rounded-0" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg" alt="Card image cap">
+                                  <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                  </a>
+                                </div>
+                    
+                                <!-- Card content -->
+                                <div class="card-body ">
+                                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.</p>
+                                  <div class="text-center"><a href="#" class="btn btn-danger w-100 rounded-circle">Get</a></div>
+                                  
+                                </div>
+                    
+                              </div>
+                    <!-- Card -->
+                            </div>
+                            <div class="col-md-4 mb-4" >
+                              <!-- Card -->
+                                        <div class="card promoting-card">
+                              
+                                          <!-- Card content -->
+                                          <div class="card-body d-flex flex-row mx-auto">
+                                            <!-- Content -->
+                                            <div>
+                                              <!-- Title -->
+                                              <h4 class="card-title font-weight-bold mb-2">New spicy meals</h4>
+                                              <!-- Subtitle -->
+                                              <span class="card-text"><i class="far fa-clock pr-2"></i>08/20/2020</span>
+                                              <span class="card-text"><i class="far fa-clock pr-2"></i>07/24/2020</span>
+                                            </div>
+                                          </div>
+                              
+                                          <!-- Card image -->
+                                          <div class="view overlay">
+                                            <img class="card-img-top rounded-0" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg" alt="Card image cap">
+                                            <a href="#!">
+                                              <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                          </div>
+                              
+                                          <!-- Card content -->
+                                          <div class="card-body ">
+                                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.</p>
+                                            <a href="#" class="btn btn-danger">Get</a>
+                                            
+                                          </div>
+                              
+                                        </div>
+                              <!-- Card -->
+                                      </div>
+                                      
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <!-- <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Be Better</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Be Smarter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Be Faster</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Be Stronger</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quibusdam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+<section id='mostResent'>
+  <div class="container">
+
+  </div>
+</section>
+  
+  <!-- ABOUT / WHY SECTION -->
+  <section id="about" class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              Why us?
+            </h1>
+            <p class="lead pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.
+            </p>
+          </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Get Inspired
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading2">
+                <h5 class="mb-0">
+                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Gain The Knowledge
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading3">
+                <h5 class="mb-0">
+                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Open Your Mind
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse3" class="collapse">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi pariatur optio totam obcaecati facere nam nihil inventore dolorum consequuntur quis unde voluptatibus numquam velit veniam explicabo eveniet fugit hic, tenetur. Iusto, consequatur, obcaecati. Ab earum alias, placeat exercitationem possimus quidem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officia officiis aliquam fugiat, omnis, corrupti dolorum ipsa laudantium sequi dolores!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <!-- <section id="authors" class="my-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              Meet The Authors
+            </h1>
+            <p class="lead pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet omnis fuga maiores excepturi dolores explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Susan Williams</h3>
+              <h5 class="text-muted">Lead Writer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Grace Smith</h3>
+              <h5 class="text-muted">Co-Writer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>John Doe</h3>
+              <h5 class="text-muted">Editor</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Kevin Swanson</h3>
+              <h5 class="text-muted">Designer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae molestiae alias expedita quae esse ut.</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touch</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et.</p>
+          <form>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+              </div>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+          </form>
+        </div>
+        <div class="col-lg-3 align-self-center">
+          <img src="img/mlogo.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="lead">Copyright &copy; 2017</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script>
+ $( document ).ready(function(){
+
+});
+  </script>
+</body>
+</html>
